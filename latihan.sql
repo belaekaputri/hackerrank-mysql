@@ -1,3 +1,4 @@
+## Level Easy
 --Revising the Select Query I
 select * from city where POPULATION >100000 and CONTRYCODE="USA"
 --Revising the Select Query II
