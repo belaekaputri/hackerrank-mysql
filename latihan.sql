@@ -48,3 +48,11 @@ SELECT ROUND(AVG(POPULATION)) FROM CITY
 SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE="JPN"
 --Query the difference between the maximum and minimum populations in CITY.
 SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY
+--Query the following two values from the STATION table:
+--1.The sum of all values in LAT_N rounded to a scale of 2 decimal places.
+--2.The sum of all values in LONG_W rounded to a scale of 2 decimal places.
+SELECT ROUND(SUM(LAT_N),2),ROUND(SUM(LONG_W),2) FROM STATION
+--Query the sum of Northern Latitudes (LAT_N) from STATION having values greater than 38.7880 AND  less than 137.2345. Truncate your answer to 4 decimal places.
+SELECT ROUND(SUM(LAT_N),4) FROM STATION WHERE LAT_N > 38.7880 AND LAT_N < 137.2345
+--Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to 4 decimal places.
+SELECT ROUND(MAX(LAT_N),4) FROM STATION WHERE LAT_N < 137.2345
