@@ -1,3 +1,4 @@
+## Level Easy
 --Revising the Select Query I
 select * from city where POPULATION >100000 and CONTRYCODE="USA"
 --Revising the Select Query II
@@ -56,3 +57,4 @@ SELECT ROUND(SUM(LAT_N),2),ROUND(SUM(LONG_W),2) FROM STATION
 SELECT ROUND(SUM(LAT_N),4) FROM STATION WHERE LAT_N > 38.7880 AND LAT_N < 137.2345
 --Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to 4 decimal places.
 SELECT ROUND(MAX(LAT_N),4) FROM STATION WHERE LAT_N < 137.2345
+
